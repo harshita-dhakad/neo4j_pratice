@@ -1,6 +1,8 @@
 import utils
 from log import logger
 
+//ritik yadav
+
 def create_column(column_info: list) :
     logger.info("Structuring the columns provided.")
     col_str = " VARCHAR(150),".join(column_info) + " VARCHAR(150),"
