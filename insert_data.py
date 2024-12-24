@@ -58,33 +58,14 @@ def projects_data_insertion() -> str :
         VALUES
         (1,'Project Alpha', '2024-01-01', '2024-12-31', 100000.00),
         (2,'Project Beta', '2024-03-15', '2024-09-15', 50000.00),
-        (1,'Project Gamma', '2024-05-01', '2024-11-30', 200000.00),
-        (5,'Project Delta', '2024-06-01', '2024-12-31', 150000.00),
-        (4,'Project Epsilon', '2024-07-01', '2025-06-30', 75000.00),
-        (1,'Project Zeta', '2024-08-01', '2025-01-31', 120000.00),
-        (3,'Project Eta', '2024-09-01', '2024-12-31', 95000.00),
-        (2,'Project Theta', '2024-10-01', '2025-03-31', 110000.00),
-        (4,'Project Iota', '2024-11-01', '2025-06-30', 80000.00),
-        (3,'Project Kappa', '2024-12-01', '2025-09-30', 130000.00),
-        (6,'Project Alpha', '2024-01-01', '2024-12-31', 100000.00),
-        (7,'Project Beta', '2024-03-15', '2024-09-15', 50000.00),
-        (8,'Project Gamma', '2024-05-01', '2024-11-30', 200000.00),
-        (9,'Project Delta', '2024-06-01', '2024-12-31', 150000.00),
-        (10,'Project Epsilon', '2024-07-01', '2025-06-30', 75000.00),
-        (11,'Project Zeta', '2024-08-01', '2025-01-31', 120000.00),
-        (12,'Project Eta', '2024-09-01', '2024-12-31', 95000.00),
-        (13,'Project Theta', '2024-10-01', '2025-03-31', 110000.00),
-        (14,'Project Iota', '2024-11-01', '2025-06-30', 80000.00),
-        (15,'Project Kappa', '2024-12-01', '2025-09-30', 130000.00),
-        (16,'Project Beta', '2024-03-15', '2024-09-15', 50000.00),
-        (17,'Project Gamma', '2024-05-01', '2024-11-30', 200000.00),
-        (18,'Project Delta', '2024-06-01', '2024-12-31', 150000.00),
-        (19,'Project Epsilon', '2024-07-01', '2025-06-30', 75000.00),
-        (20,'Project Zeta', '2024-08-01', '2025-01-31', 120000.00),
-        (6,'Project Eta', '2024-09-01', '2024-12-31', 95000.00),
+        (3,'Project Gamma', '2024-05-01', '2024-11-30', 200000.00),
+        (4,'Project Delta', '2024-06-01', '2024-12-31', 150000.00),
+        (5,'Project Epsilon', '2024-07-01', '2025-06-30', 75000.00),
+        (6,'Project Zeta', '2024-08-01', '2025-01-31', 120000.00),
+        (7,'Project Eta', '2024-09-01', '2024-12-31', 95000.00),
         (8,'Project Theta', '2024-10-01', '2025-03-31', 110000.00),
         (9,'Project Iota', '2024-11-01', '2025-06-30', 80000.00),
-        (14,'Project Kappa', '2024-12-01', '2025-09-30', 130000.00);
+        (10,'Project Kappa', '2024-12-01', '2025-09-30', 130000.00),
     '''
     logger.info('query has been created')
     return table
@@ -115,15 +96,15 @@ def tasks_data_insertion() -> str :
         INSERT INTO task (id,task_name, task_description, deadline)
         VALUES
         (1,'Backend Development', 'Develop and implement the backend API for the application', '2024-12-31'),
-        (8,'Frontend Development', 'Design and implement the user interface of the application', '2024-12-15'),
-        (10,'Database Design', 'Design the relational database schema and structure', '2024-12-10'),
-        (6,'Testing', 'Write test cases and perform unit testing on modules', '2024-12-20'),
-        (1,'Deployment', 'Deploy the application to the production environment', '2024-12-25'),
-        (20,'Documentation', 'Prepare user and technical documentation for the project', '2024-12-05'),
-        (12,'Code Review', 'Review the codebase and ensure adherence to coding standards', '2024-12-12'),
-        (3,'Security Audit', 'Perform a security audit of the application', '2024-12-18'),
-        (11,'Project Management', 'Coordinate with teams and ensure project milestones are met', '2024-12-01'),
-        (11,'Client Communication', 'Communicate with the client regarding project progress and issues', '2024-12-08');
+        (2,'Frontend Development', 'Design and implement the user interface of the application', '2024-12-15'),
+        (3,'Database Design', 'Design the relational database schema and structure', '2024-12-10'),
+        (4,'Testing', 'Write test cases and perform unit testing on modules', '2024-12-20'),
+        (5,'Deployment', 'Deploy the application to the production environment', '2024-12-25'),
+        (6,'Documentation', 'Prepare user and technical documentation for the project', '2024-12-05'),
+        (7,'Code Review', 'Review the codebase and ensure adherence to coding standards', '2024-12-12'),
+        (8,'Security Audit', 'Perform a security audit of the application', '2024-12-18'),
+        (9,'Project Management', 'Coordinate with teams and ensure project milestones are met', '2024-12-01'),
+        (10,'Client Communication', 'Communicate with the client regarding project progress and issues', '2024-12-08');
 
     '''
     logger.info('query has been created')

@@ -3,16 +3,16 @@ from log import logger
 
 def create_column(column_info: list) :
     logger.info("Structuring the columns provided.")
-    return " VARCHAR(150),".join(column_info) + " VARCHAR(150)"
+    col_str = " VARCHAR(150),".join(column_info) + " VARCHAR(150),"
+    col_str += "created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,"
+    col_str += "last_modify_on TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP"
+    return col_str
 
 def create_table_structure(table_info: list) -> str :
     logger.info("create_table_structure function create structure of table and return in one variable")
     table = ""
     for i in table_info :
-       logger.info(f'creating the structure of {i}')
        table += f"CREATE TABLE If NOT EXISTS {i["table_name"]}({create_column(i["columns"])});"
-       logger.info(f'structure has been created of {i} table')
-    logger.info('table structure is being returned')
     return table
 
 
